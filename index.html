@@ -3,27 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>CS5356 - Homework 3</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Page</h1>
+        <h1>CS 5356 - Building Startup Systems HW3</h1>
     </header>
-    <main class="container">
-        <img src="img.png" alt="Profile Picture">
-        <section>
-            <h2>About Me</h2>
-            <p>Hi, I'm [Your Name]! I'm passionate about web development, design, and technology. This is a simple personal page to introduce myself. I love building beautiful and functional websites.</p>
-            <p>Feel free to connect with me and explore my work!</p>
-        </section>
-    </main>
-    <button id="fetchQuote">Get a Quote</button>
+    <div class="content-wrapper">
+        <main class="main-content">
+            <img src="pika.png" alt="Profile Picture">
+            
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hi, I'm Kaushik! I am currently pursuing my Masters in Engineering Computer Science Degree at Cornell Tech. HOWEVER, I used to play esports at a semi-professional level, and I'm here to nerd out about it and teach you some basics :D - maybe when I update this page more in the future</p>
+                <p>If you'd like to reach out, contact me!:</p>
+                <address>
+                    <a href="mailto:kaushik.korlapati@gmail.com">kaushik.korlapati@gmail.com</a><br />
+                    <a href="tel:+13106348825">+1 (310) 634-8825</a>
+                </address>
+            </section>
+
+            <section id="projects">
+                <h2>JETT GO PEW PEW PEW</h2>
+                <video width="600" controls>
+                    <source src="jett_knives.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </main>
+
+        <!-- Table of Contents Sidebar -->
+        <aside class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Video Implementation!</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <button id="fetchQuote">API SUMMONER</button>
     <dialog id="quoteDialog">
         <p class="quote" id="quoteText">Fetching quote...</p>
         <button id="closeDialog">Close</button>
     </dialog>
+
     <script src="script.js"></script>
 </body>
 </html>
